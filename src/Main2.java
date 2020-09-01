@@ -51,7 +51,6 @@ public class Main2 {
         if(n == 0){
             //考察尾部
             if(n + (int)map1.get(m)  < str.length()){
-                if()
             }
         }
         else{
