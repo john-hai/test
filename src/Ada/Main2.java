@@ -60,26 +60,26 @@ public class Main2 {
     }
 
     public static void main(String[] args) {
-//        Scanner sc = new Scanner(System.in);
-//        int n = sc.nextInt();
-//        int m = sc.nextInt();
-//        int[][] arr = new int[n][m];
-//        boolean[][] vis = new boolean[n][m];
-//        int a;
-//        int count = 0;
-//        for(int i = 0; i < n; i++){
-//            for(int j = 0; j < m; j++){
-//                a = sc.nextInt();
-//                arr[i][j] = a;
-//                if(a == 1){
-//                    vis[i][j] = true;
-//                    count++;
-//                }
-//            }
-//        }
-        int[][] arr1 = {{1,0,1,1},{1,1,0,1},{0,0,0,0},{1,1,1,1}};
-        int ans = largest(4, 4, arr1, 10);
-//        int ans = largest(n, m, arr1, count);
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int m = sc.nextInt();
+        int[][] arr = new int[n][m];
+        //boolean[][] vis = new boolean[n][m];
+        int a;
+        int count = 0;
+        for(int i = 0; i < n; i++){
+            for(int j = 0; j < m; j++){
+                a = sc.nextInt();
+                arr[i][j] = a;
+                if(a == 1){
+                    //vis[i][j] = true;
+                    count++;
+                }
+            }
+        }
+//        int[][] arr1 = {{1,0,1,1},{1,1,0,1},{0,0,0,0},{1,1,1,1}};
+//        int ans = largest(4, 4, arr1, 10);
+        int ans = largest(n, m, arr, count);
         System.out.print(ans);
     }
 }
