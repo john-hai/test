@@ -34,11 +34,11 @@ public class VIVO03 {
                 i=-1;
             }
         }
-        StringBuilder sb = new StringBuilder();
+        StringBuilder stringBuilder = new StringBuilder();
         for(int i:ans){
-            sb.append(",").append(i);
+            stringBuilder.append(",").append(i);
         }
-        return  sb.toString().substring(1);
+        return  stringBuilder.toString().substring(1);
     }
 
     public static void main(String[] args) {
