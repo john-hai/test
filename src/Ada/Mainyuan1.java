@@ -52,7 +52,7 @@ public class Mainyuan1 {
     return (res % 10000000 + 10000000)%10000000;
 }
     //删除所有的括号对，并返回右括号的位置
-    private int findClosing(String s) {
+    private static int findClosing(String s) {
         int level = 0, i = 0;
         for (i = 0; i < s.length(); i++) {
             if (s.charAt(i) == '(') {
