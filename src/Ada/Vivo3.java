@@ -17,7 +17,7 @@ public class Vivo3 {
        Map<Integer, ArrayList<Integer>> map2 = new HashMap<>();
        for(int i = 0; i < temp.length; i++){
            map1.put(i, Integer.parseInt(temp[i]));
-           if(Integer.parseInt(temp[i]))
+           //if(Integer.parseInt(temp[i]))
        }
 
 
