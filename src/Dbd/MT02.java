@@ -12,23 +12,23 @@ public class MT02 {
         int n = scanner.nextInt();
         int m =scanner.nextInt();
         int val = scanner.nextInt();
-        int[] memo = new int[n];
+        int[] array = new int[n];
         int count = 0;
         for(int i=0;i<n;i++){
-            memo[i] = scanner.nextInt();
+            array[i] = scanner.nextInt();
         }
         int i=0;
         int j=0;
-        boolean fail = false;
-        for(;i<=n-m;){
-            for(;j<m;j++){
-                if(memo[i+j]<val){
-                    fail=true;
+        boolean judge = false;
+        while(i <= n-m){
+            for( ;j<m;j++){
+                if(array[i+j]<val){
+                    judge = true;
                     break;
                 }
             }
-            if(fail){
-                fail=false;
+            if(judge){
+                judge=false;
                 i=i+j+1;
                 j=0;
             }else{
@@ -38,6 +38,5 @@ public class MT02 {
             }
         }
         System.out.println(count);
-
     }
 }
