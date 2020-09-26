@@ -25,7 +25,8 @@ public class Pdd4 {
         for(int i=2;i<=x;i++){
             for(int j=2;j<=y;j++){
                 int o = Math.max(Math.max(dp[i-1][j], dp[i][j-1]), dp[i-1][j-1]);
-                int p = Math.max(Math.max(dp[i][j-2]*dp[i-2][2], dp[i-2][j]*dp[2][j-2]), dp[i-2][j-2]*dp[i-2][2]*dp[2][j-2]);
+//                int p = Math.max(Math.max(dp[i][j-2]*dp[i-2][2], dp[i-2][j]*dp[2][j-2]), dp[i-2][j-2]*dp[i-2][2]*dp[2][j-2]);
+                int p = dp[i-2][j-2]*dp[i-2][2]*dp[2][j-2];
                 dp[i][j] = (o+p)%1000000007;
             }
         }
