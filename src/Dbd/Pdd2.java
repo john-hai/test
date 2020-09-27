@@ -40,6 +40,9 @@ public class Pdd2 {
             }
         }
         int dist = bfs(map, used, x, y);
+        if(dist == 1){
+            return;
+        }
         System.out.println(dist-2);
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){
