@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class Netease1 {
     public static int[][] solution(int n){
         int[][] ans = new int[n][n];
@@ -7,9 +6,9 @@ public class Netease1 {
             return ans;
         }
         int k = 1;
-        int rows = n;
-        int columns = n;
-        int left = 0, right = columns - 1, top = 0, bottom = rows - 1;
+        int x = n;
+        int y = n;
+        int left = 0, right = columns - 1, top = 0, bottom = x - 1;
         while(left <= right && top <= bottom){
             if(left % 2 == 0 && top % 2 == 0) {
                 for (int column = left; column <= right; column++) {
@@ -53,14 +52,6 @@ public class Netease1 {
     }
 
     public static void main(String[] args) {
-        // int[][] array = solution(7);
-//        for(int i = 0; i < 7; i++){
-//            for(int j = 0; j < 7; j++){
-//                System.out.printf("%3d", array[i][j]);
-//            }
-//            System.out.println();
-//        }
-
         Scanner scanner = new Scanner(System.in);
         int num = scanner.nextInt();
         for(int i = 0; i < num; i++){
